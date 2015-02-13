@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA97C3501A8E7046008EF118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C34F1A8E7046008EF118 /* AppDelegate.swift */; };
+		DA97C3521A8E7046008EF118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C3511A8E7046008EF118 /* ViewController.swift */; };
+		DA97C3551A8E7046008EF118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA97C3531A8E7046008EF118 /* Main.storyboard */; };
+		DA97C3571A8E7046008EF118 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA97C3561A8E7046008EF118 /* Images.xcassets */; };
+		DA97C35A1A8E7046008EF118 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA97C3581A8E7046008EF118 /* LaunchScreen.xib */; };
+		DA97C3661A8E7046008EF118 /* psychic_ishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C3651A8E7046008EF118 /* psychic_ishTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA97C3601A8E7046008EF118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA97C3421A8E7046008EF118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA97C3491A8E7046008EF118;
+			remoteInfo = "psychic-ish";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA97C34A1A8E7046008EF118 /* psychic-ish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "psychic-ish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA97C34E1A8E7046008EF118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA97C34F1A8E7046008EF118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA97C3511A8E7046008EF118 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA97C3541A8E7046008EF118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA97C3561A8E7046008EF118 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA97C3591A8E7046008EF118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DA97C35F1A8E7046008EF118 /* psychic-ishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "psychic-ishTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA97C3641A8E7046008EF118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA97C3651A8E7046008EF118 /* psychic_ishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = psychic_ishTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA97C3471A8E7046008EF118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA97C35C1A8E7046008EF118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA97C3411A8E7046008EF118 = {
+			isa = PBXGroup;
+			children = (
+				DA97C34C1A8E7046008EF118 /* psychic-ish */,
+				DA97C3621A8E7046008EF118 /* psychic-ishTests */,
+				DA97C34B1A8E7046008EF118 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA97C34B1A8E7046008EF118 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA97C34A1A8E7046008EF118 /* psychic-ish.app */,
+				DA97C35F1A8E7046008EF118 /* psychic-ishTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA97C34C1A8E7046008EF118 /* psychic-ish */ = {
+			isa = PBXGroup;
+			children = (
+				DA97C34F1A8E7046008EF118 /* AppDelegate.swift */,
+				DA97C3511A8E7046008EF118 /* ViewController.swift */,
+				DA97C3531A8E7046008EF118 /* Main.storyboard */,
+				DA97C3561A8E7046008EF118 /* Images.xcassets */,
+				DA97C3581A8E7046008EF118 /* LaunchScreen.xib */,
+				DA97C34D1A8E7046008EF118 /* Supporting Files */,
+			);
+			path = "psychic-ish";
+			sourceTree = "<group>";
+		};
+		DA97C34D1A8E7046008EF118 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA97C34E1A8E7046008EF118 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA97C3621A8E7046008EF118 /* psychic-ishTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA97C3651A8E7046008EF118 /* psychic_ishTests.swift */,
+				DA97C3631A8E7046008EF118 /* Supporting Files */,
+			);
+			path = "psychic-ishTests";
+			sourceTree = "<group>";
+		};
+		DA97C3631A8E7046008EF118 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA97C3641A8E7046008EF118 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA97C3491A8E7046008EF118 /* psychic-ish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA97C3691A8E7046008EF118 /* Build configuration list for PBXNativeTarget "psychic-ish" */;
+			buildPhases = (
+				DA97C3461A8E7046008EF118 /* Sources */,
+				DA97C3471A8E7046008EF118 /* Frameworks */,
+				DA97C3481A8E7046008EF118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "psychic-ish";
+			productName = "psychic-ish";
+			productReference = DA97C34A1A8E7046008EF118 /* psychic-ish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA97C35E1A8E7046008EF118 /* psychic-ishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA97C36C1A8E7046008EF118 /* Build configuration list for PBXNativeTarget "psychic-ishTests" */;
+			buildPhases = (
+				DA97C35B1A8E7046008EF118 /* Sources */,
+				DA97C35C1A8E7046008EF118 /* Frameworks */,
+				DA97C35D1A8E7046008EF118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA97C3611A8E7046008EF118 /* PBXTargetDependency */,
+			);
+			name = "psychic-ishTests";
+			productName = "psychic-ishTests";
+			productReference = DA97C35F1A8E7046008EF118 /* psychic-ishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA97C3421A8E7046008EF118 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Sunder;
+				TargetAttributes = {
+					DA97C3491A8E7046008EF118 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DA97C35E1A8E7046008EF118 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = DA97C3491A8E7046008EF118;
+					};
+				};
+			};
+			buildConfigurationList = DA97C3451A8E7046008EF118 /* Build configuration list for PBXProject "psychic-ish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA97C3411A8E7046008EF118;
+			productRefGroup = DA97C34B1A8E7046008EF118 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA97C3491A8E7046008EF118 /* psychic-ish */,
+				DA97C35E1A8E7046008EF118 /* psychic-ishTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA97C3481A8E7046008EF118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA97C3551A8E7046008EF118 /* Main.storyboard in Resources */,
+				DA97C35A1A8E7046008EF118 /* LaunchScreen.xib in Resources */,
+				DA97C3571A8E7046008EF118 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA97C35D1A8E7046008EF118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA97C3461A8E7046008EF118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA97C3521A8E7046008EF118 /* ViewController.swift in Sources */,
+				DA97C3501A8E7046008EF118 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA97C35B1A8E7046008EF118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA97C3661A8E7046008EF118 /* psychic_ishTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA97C3611A8E7046008EF118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA97C3491A8E7046008EF118 /* psychic-ish */;
+			targetProxy = DA97C3601A8E7046008EF118 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA97C3531A8E7046008EF118 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA97C3541A8E7046008EF118 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA97C3581A8E7046008EF118 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA97C3591A8E7046008EF118 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA97C3671A8E7046008EF118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA97C3681A8E7046008EF118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA97C36A1A8E7046008EF118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "psychic-ish/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA97C36B1A8E7046008EF118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "psychic-ish/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA97C36D1A8E7046008EF118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "psychic-ishTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/psychic-ish.app/psychic-ish";
+			};
+			name = Debug;
+		};
+		DA97C36E1A8E7046008EF118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "psychic-ishTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/psychic-ish.app/psychic-ish";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA97C3451A8E7046008EF118 /* Build configuration list for PBXProject "psychic-ish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA97C3671A8E7046008EF118 /* Debug */,
+				DA97C3681A8E7046008EF118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA97C3691A8E7046008EF118 /* Build configuration list for PBXNativeTarget "psychic-ish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA97C36A1A8E7046008EF118 /* Debug */,
+				DA97C36B1A8E7046008EF118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA97C36C1A8E7046008EF118 /* Build configuration list for PBXNativeTarget "psychic-ishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA97C36D1A8E7046008EF118 /* Debug */,
+				DA97C36E1A8E7046008EF118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA97C3421A8E7046008EF118 /* Project object */;
+}
