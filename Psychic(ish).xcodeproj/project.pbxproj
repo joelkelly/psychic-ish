@@ -125,7 +125,6 @@
 			children = (
 				DA97C3721A8E778D008EF118 /* Vendor */,
 				DA97C3771A8E797F008EF118 /* Classes */,
-				DA97C3761A8E7974008EF118 /* Models */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -147,13 +146,6 @@
 				DA97C3531A8E7046008EF118 /* Main.storyboard */,
 			);
 			name = Components;
-			sourceTree = "<group>";
-		};
-		DA97C3761A8E7974008EF118 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		DA97C3771A8E797F008EF118 /* Classes */ = {
@@ -232,7 +224,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA97C3451A8E7046008EF118 /* Build configuration list for PBXProject "psychic-ish" */;
+			buildConfigurationList = DA97C3451A8E7046008EF118 /* Build configuration list for PBXProject "Psychic(ish)" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -460,7 +452,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA97C3451A8E7046008EF118 /* Build configuration list for PBXProject "psychic-ish" */ = {
+		DA97C3451A8E7046008EF118 /* Build configuration list for PBXProject "Psychic(ish)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA97C3671A8E7046008EF118 /* Debug */,

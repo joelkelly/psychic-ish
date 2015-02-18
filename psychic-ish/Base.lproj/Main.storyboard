@@ -38,12 +38,16 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NIb-wd-7Nv" secondAttribute="bottom" constant="178" id="A8P-Vy-Udr"/>
                             <constraint firstItem="NIb-wd-7Nv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="GFx-Pb-UzB"/>
                             <constraint firstItem="NIb-wd-7Nv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="bP0-af-S1w"/>
                             <constraint firstItem="NIb-wd-7Nv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oij-kN-Pgt"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="OaT-Xo-fcq" appends="YES" id="gNB-M2-X0I"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="ResponseCard" destination="NIb-wd-7Nv" id="dEh-dF-wIJ"/>
@@ -51,6 +55,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OaT-Xo-fcq">
+                    <connections>
+                        <action selector="viewTapped:" destination="BYZ-38-t0r" id="m1L-OA-MQE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>

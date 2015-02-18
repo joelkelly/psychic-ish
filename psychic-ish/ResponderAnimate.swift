@@ -10,13 +10,13 @@ import UIKit
 import QuartzCore
 
 let ResponseAnimatorTransform:CATransform3D = {
-//    let rotationDegrees: CGFloat    = -15.0
-//    let rotationRadians: CGFloat    = rotationDegrees * (CGFloat(M_PI)/180.0)
+    let rotationDegrees: CGFloat    = -15.0
+    let rotationRadians: CGFloat    = rotationDegrees * (CGFloat(M_PI)/180.0)
 //    let offset                      = CGPointMake(-20, -20)
     var startTransform              = CATransform3DIdentity
-//        startTransform              = CATransform3DRotate(CATransform3DIdentity, rotationRadians, 0.0, 0.0, 1.0)
+        startTransform              = CATransform3DRotate(CATransform3DIdentity, rotationRadians, 0.9, 0.9, 0.0)
         startTransform              = CATransform3DTranslate(startTransform, 0.0, 0.0, -0.9)
-        startTransform              = CATransform3DScale(startTransform,  0.8,  0.8,  5000.0)
+        startTransform              = CATransform3DScale(startTransform,  0.9,  0.9,  5000.0)
 
     return startTransform
 
@@ -38,13 +38,17 @@ class ResponseCardAnimator {
         let view                        = cell.layer
         let transforms                  = (ResponseAnimatorTransform, CATransform3DIdentity)
         let alpha : (Float, Float)      = (0.0, 1)
+        let curve                       = direction ? UIViewAnimationOptions.CurveEaseIn : UIViewAnimationOptions.CurveEaseIn
+        let duration                    = direction ? 1.2 : 0.3
 
-        view.transform  = direction ? transforms.0 : transforms.1
-        view.opacity    = direction ? alpha.0 : alpha.1
+        view.transform                  = direction ? transforms.0 : transforms.1
+        view.opacity                    = direction ? alpha.0 : alpha.1
 
-        UIView.animateWithDuration(0.3, delay: animationDelay, options: .CurveEaseInOut, animations: {
-            view.transform  = direction ? transforms.1 : transforms.0
-            view.opacity    = direction ? alpha.1 : alpha.0
+        UIView.animateWithDuration(duration, delay: animationDelay, options: curve, animations: {
+
+            view.transform              = direction ? transforms.1 : transforms.0
+            view.opacity                = direction ? alpha.1 : alpha.0
+
             }, completion: {
                 finished in
                 completion()

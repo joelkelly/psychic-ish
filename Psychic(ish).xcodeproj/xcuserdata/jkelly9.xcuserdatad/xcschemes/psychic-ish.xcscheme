@@ -17,7 +17,7 @@
                BlueprintIdentifier = "DA97C3491A8E7046008EF118"
                BuildableName = "psychic-ish.app"
                BlueprintName = "psychic-ish"
-               ReferencedContainer = "container:psychic-ish.xcodeproj">
+               ReferencedContainer = "container:Psychic(ish).xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "DA97C35E1A8E7046008EF118"
                BuildableName = "psychic-ishTests.xctest"
                BlueprintName = "psychic-ishTests"
-               ReferencedContainer = "container:psychic-ish.xcodeproj">
+               ReferencedContainer = "container:Psychic(ish).xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "DA97C35E1A8E7046008EF118"
                BuildableName = "psychic-ishTests.xctest"
                BlueprintName = "psychic-ishTests"
-               ReferencedContainer = "container:psychic-ish.xcodeproj">
+               ReferencedContainer = "container:Psychic(ish).xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "DA97C3491A8E7046008EF118"
             BuildableName = "psychic-ish.app"
             BlueprintName = "psychic-ish"
-            ReferencedContainer = "container:psychic-ish.xcodeproj">
+            ReferencedContainer = "container:Psychic(ish).xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -79,7 +79,7 @@
             BlueprintIdentifier = "DA97C3491A8E7046008EF118"
             BuildableName = "psychic-ish.app"
             BlueprintName = "psychic-ish"
-            ReferencedContainer = "container:psychic-ish.xcodeproj">
+            ReferencedContainer = "container:Psychic(ish).xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -98,7 +98,7 @@
             BlueprintIdentifier = "DA97C3491A8E7046008EF118"
             BuildableName = "psychic-ish.app"
             BlueprintName = "psychic-ish"
-            ReferencedContainer = "container:psychic-ish.xcodeproj">
+            ReferencedContainer = "container:Psychic(ish).xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

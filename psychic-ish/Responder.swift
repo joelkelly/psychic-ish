@@ -17,12 +17,15 @@ class Responder {
     var answers:    JSON!
     var responders: JSON!
 
+
     var isActive    = false
     var canRespond  = true
+    var timer:NSTimer?
 
     init ( card:UIView, label:UILabel ){
-        responseCard  = card
-        responseLabel = label
+        responseCard    = card
+        responseLabel   = label
+
         loadOptions("rude")
     }
 
@@ -30,17 +33,15 @@ class Responder {
         canRespond = false;
         ResponderModel.getWithSuccess("https://charlatan.firebaseio.com/\(timber).json" , { (jsonData) -> Void in
             var jsonData        = JSON(data: jsonData)
-
             self.answers        = jsonData["answers"]
             self.preAnswers     = jsonData["preAnswers"]
             self.responders     = jsonData["responders"]
-
             self.canRespond     = true
-
         })
     }
 
-    func respond(){
+    @objc func respond(){
+        timer?.invalidate()
         if canRespond {
             ResponseCardAnimator.animate(responseCard, animationDelay: 0.2, direction:false, { self.isActive ? self.answer() : self.prepare() })
             isActive = !isActive
@@ -50,12 +51,9 @@ class Responder {
     func answer(){
         self.canRespond     = false
         self.setLabel( Chooser.decider(self.responders) + Chooser.decider(self.answers) )
-        ResponseCardAnimator.animate(responseCard, animationDelay:1.0, direction:true, {
-
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 3 * Int64(NSEC_PER_SEC)), dispatch_get_main_queue(), {
-                self.canRespond     = true
-                self.respond()
-            });
+        ResponseCardAnimator.animate(responseCard, animationDelay:1.5, direction:true, {
+            self.canRespond     = true
+            self.timer? = NSTimer.scheduledTimerWithTimeInterval(3.5, target: self, selector: Selector("respond"), userInfo: nil, repeats: false)
 
         })
     }

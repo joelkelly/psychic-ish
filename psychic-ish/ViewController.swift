@@ -22,10 +22,13 @@ class ViewController: UIViewController {
 
     }
 
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
 
-        self.responder.respond()
-        
+    @IBAction func viewTapped(sender : AnyObject) {
+        responder.respond()
+    }
+
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
+        if (motion == .MotionShake) { responder.respond() }
     }
 
 }
