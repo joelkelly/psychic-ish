@@ -20,7 +20,7 @@ class Responder {
 
     var isActive    = false
     var canRespond  = true
-    var timer:NSTimer?
+    var timer       = NSTimer()
 
     init ( card:UIView, label:UILabel ){
         responseCard    = card
@@ -41,8 +41,9 @@ class Responder {
     }
 
     @objc func respond(){
-        timer?.invalidate()
+
         if canRespond {
+            timer.invalidate()
             ResponseCardAnimator.animate(responseCard, animationDelay: 0.2, direction:false, { self.isActive ? self.answer() : self.prepare() })
             isActive = !isActive
         }
@@ -52,8 +53,8 @@ class Responder {
         self.canRespond     = false
         self.setLabel( Chooser.decider(self.responders) + Chooser.decider(self.answers) )
         ResponseCardAnimator.animate(responseCard, animationDelay:1.5, direction:true, {
-            self.canRespond     = true
-            self.timer? = NSTimer.scheduledTimerWithTimeInterval(3.5, target: self, selector: Selector("respond"), userInfo: nil, repeats: false)
+            self.canRespond = true
+            self.timer      = NSTimer.scheduledTimerWithTimeInterval(4.5, target: self, selector: Selector("respond"), userInfo: nil, repeats: false)
 
         })
     }
