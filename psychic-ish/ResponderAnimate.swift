@@ -12,7 +12,7 @@ import QuartzCore
 let ResponseAnimatorTransform:CATransform3D = {
     let rotationDegrees: CGFloat    = -15.0
     let rotationRadians: CGFloat    = rotationDegrees * (CGFloat(M_PI)/180.0)
-//    let offset                      = CGPointMake(-20, -20)
+    
     var startTransform              = CATransform3DIdentity
         startTransform              = CATransform3DRotate(CATransform3DIdentity, rotationRadians, 0.9, 0.9, 0.0)
         startTransform              = CATransform3DTranslate(startTransform, 0.0, 0.0, -0.9)
