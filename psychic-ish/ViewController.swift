@@ -10,16 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ResponseCard: UIView!
+    @IBOutlet weak var ResponseLabel: UILabel!
+
+    var responder:Responder!
+
     override func viewDidLoad() {
+
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        responder = Responder(card: ResponseCard, label: ResponseLabel)
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
 
+        self.responder.respond()
+        
+    }
 
 }
 

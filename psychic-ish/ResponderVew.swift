@@ -6,4 +6,11 @@
 //  Copyright (c) 2015 Sunder. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class ResponderView: UIViewController{
+    
+
+
+}

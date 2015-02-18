@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA50FF7E1A92A1A700EF1AD5 /* swiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50FF7D1A92A1A700EF1AD5 /* swiftyJSON.swift */; };
+		DA50FF801A92A20900EF1AD5 /* Chooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50FF7F1A92A20900EF1AD5 /* Chooser.swift */; };
 		DA97C3501A8E7046008EF118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C34F1A8E7046008EF118 /* AppDelegate.swift */; };
 		DA97C3521A8E7046008EF118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C3511A8E7046008EF118 /* ViewController.swift */; };
 		DA97C3551A8E7046008EF118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA97C3531A8E7046008EF118 /* Main.storyboard */; };
 		DA97C3571A8E7046008EF118 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA97C3561A8E7046008EF118 /* Images.xcassets */; };
-		DA97C35A1A8E7046008EF118 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA97C3581A8E7046008EF118 /* LaunchScreen.xib */; };
 		DA97C3661A8E7046008EF118 /* psychic_ishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C3651A8E7046008EF118 /* psychic_ishTests.swift */; };
+		DA97C37B1A8E7F9C008EF118 /* ResponderVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C37A1A8E7F9C008EF118 /* ResponderVew.swift */; };
+		DA97C37D1A8E7FAC008EF118 /* ResponderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C37C1A8E7FAC008EF118 /* ResponderModel.swift */; };
+		DA97C37F1A8E8E4A008EF118 /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C37E1A8E8E4A008EF118 /* Responder.swift */; };
+		DA97C3821A8EA57A008EF118 /* ResponderAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97C3811A8EA57A008EF118 /* ResponderAnimate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA50FF7D1A92A1A700EF1AD5 /* swiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftyJSON.swift; sourceTree = "<group>"; };
+		DA50FF7F1A92A20900EF1AD5 /* Chooser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chooser.swift; sourceTree = "<group>"; };
 		DA97C34A1A8E7046008EF118 /* psychic-ish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "psychic-ish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA97C34E1A8E7046008EF118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA97C34F1A8E7046008EF118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA97C3511A8E7046008EF118 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA97C3541A8E7046008EF118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA97C3561A8E7046008EF118 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DA97C3591A8E7046008EF118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DA97C35F1A8E7046008EF118 /* psychic-ishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "psychic-ishTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA97C3641A8E7046008EF118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA97C3651A8E7046008EF118 /* psychic_ishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = psychic_ishTests.swift; sourceTree = "<group>"; };
+		DA97C37A1A8E7F9C008EF118 /* ResponderVew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponderVew.swift; sourceTree = "<group>"; };
+		DA97C37C1A8E7FAC008EF118 /* ResponderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponderModel.swift; sourceTree = "<group>"; };
+		DA97C37E1A8E8E4A008EF118 /* Responder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
+		DA97C3811A8EA57A008EF118 /* ResponderAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponderAnimate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +87,8 @@
 		DA97C34C1A8E7046008EF118 /* psychic-ish */ = {
 			isa = PBXGroup;
 			children = (
-				DA97C34F1A8E7046008EF118 /* AppDelegate.swift */,
-				DA97C3511A8E7046008EF118 /* ViewController.swift */,
-				DA97C3531A8E7046008EF118 /* Main.storyboard */,
-				DA97C3561A8E7046008EF118 /* Images.xcassets */,
-				DA97C3581A8E7046008EF118 /* LaunchScreen.xib */,
+				DA97C36F1A8E7755008EF118 /* Common */,
+				DA97C3751A8E78D0008EF118 /* Components */,
 				DA97C34D1A8E7046008EF118 /* Supporting Files */,
 			);
 			path = "psychic-ish";
@@ -90,6 +97,7 @@
 		DA97C34D1A8E7046008EF118 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA97C3561A8E7046008EF118 /* Images.xcassets */,
 				DA97C34E1A8E7046008EF118 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +118,61 @@
 				DA97C3641A8E7046008EF118 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA97C36F1A8E7755008EF118 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DA97C3721A8E778D008EF118 /* Vendor */,
+				DA97C3771A8E797F008EF118 /* Classes */,
+				DA97C3761A8E7974008EF118 /* Models */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		DA97C3721A8E778D008EF118 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				DA50FF7D1A92A1A700EF1AD5 /* swiftyJSON.swift */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		DA97C3751A8E78D0008EF118 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DA97C3791A8E7F6E008EF118 /* Responder */,
+				DA97C34F1A8E7046008EF118 /* AppDelegate.swift */,
+				DA97C3511A8E7046008EF118 /* ViewController.swift */,
+				DA97C3531A8E7046008EF118 /* Main.storyboard */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		DA97C3761A8E7974008EF118 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DA97C3771A8E797F008EF118 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DA50FF7F1A92A20900EF1AD5 /* Chooser.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		DA97C3791A8E7F6E008EF118 /* Responder */ = {
+			isa = PBXGroup;
+			children = (
+				DA97C37E1A8E8E4A008EF118 /* Responder.swift */,
+				DA97C37A1A8E7F9C008EF118 /* ResponderVew.swift */,
+				DA97C37C1A8E7FAC008EF118 /* ResponderModel.swift */,
+				DA97C3811A8EA57A008EF118 /* ResponderAnimate.swift */,
+			);
+			name = Responder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +224,7 @@
 				TargetAttributes = {
 					DA97C3491A8E7046008EF118 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 95S6M27E69;
 					};
 					DA97C35E1A8E7046008EF118 = {
 						CreatedOnToolsVersion = 6.2;
@@ -193,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA97C3551A8E7046008EF118 /* Main.storyboard in Resources */,
-				DA97C35A1A8E7046008EF118 /* LaunchScreen.xib in Resources */,
 				DA97C3571A8E7046008EF118 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA97C3521A8E7046008EF118 /* ViewController.swift in Sources */,
+				DA97C37F1A8E8E4A008EF118 /* Responder.swift in Sources */,
+				DA50FF7E1A92A1A700EF1AD5 /* swiftyJSON.swift in Sources */,
+				DA50FF801A92A20900EF1AD5 /* Chooser.swift in Sources */,
+				DA97C3821A8EA57A008EF118 /* ResponderAnimate.swift in Sources */,
+				DA97C37B1A8E7F9C008EF118 /* ResponderVew.swift in Sources */,
+				DA97C37D1A8E7FAC008EF118 /* ResponderModel.swift in Sources */,
 				DA97C3501A8E7046008EF118 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +311,6 @@
 				DA97C3541A8E7046008EF118 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DA97C3581A8E7046008EF118 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA97C3591A8E7046008EF118 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,9 +399,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "psychic-ish/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -348,9 +413,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "psychic-ish/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -407,6 +476,7 @@
 				DA97C36B1A8E7046008EF118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA97C36C1A8E7046008EF118 /* Build configuration list for PBXNativeTarget "psychic-ishTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +485,7 @@
 				DA97C36E1A8E7046008EF118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
