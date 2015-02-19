@@ -2,7 +2,8 @@
 //  ResponderModel.swift
 //  psychic-ish
 //
-//  Created by Joel Kelly on 2/13/15.
+//  Created by Chris Goodwin on 2/6/15.
+//  Updated by Joel Kelly on 2/13/15.
 //  Copyright (c) 2015 Sunder. All rights reserved.
 //
 
