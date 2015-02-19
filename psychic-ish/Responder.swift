@@ -40,7 +40,7 @@ class Responder {
         })
     }
 
-    @objc func respond(){
+    func respond(){
 
         if canRespond {
             timer.invalidate()
