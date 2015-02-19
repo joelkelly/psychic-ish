@@ -50,8 +50,8 @@ class Responder {
     }
 
     func answer(){
-        self.canRespond     = false
-        self.setLabel( Chooser.decider(self.responders) + Chooser.decider(self.answers) )
+        canRespond     = false
+        setLabel( Chooser.decider(self.responders) + Chooser.decider(self.answers) )
         ResponseCardAnimator.animate(responseCard, animationDelay:1.5, direction:true, {
             self.canRespond = true
             self.timer      = NSTimer.scheduledTimerWithTimeInterval(4.5, target: self, selector: Selector("respond"), userInfo: nil, repeats: false)
@@ -60,7 +60,7 @@ class Responder {
     }
 
     func prepare(){
-        self.setLabel( Chooser.decider(self.preAnswers) )
+        setLabel( Chooser.decider(self.preAnswers) )
         ResponseCardAnimator.animate(responseCard, animationDelay:0.5)
     }
 
