@@ -10,8 +10,10 @@ import UIKit
 
 class Responder {
 
-    let responseLabel:UILabel!
-    let responseCard:UIView!
+    let responseLabel   :UILabel!
+    let responseCard    :UIView!
+    let nudgeLabel      :UILabel!
+    let nudgeCard       :UIView!
 
     var preAnswers: JSON!
     var answers:    JSON!
@@ -22,7 +24,7 @@ class Responder {
     var canRespond  = true
     var timer       = NSTimer()
 
-    init ( card:UIView, label:UILabel ){
+    init ( card:UIView, label:UILabel, nudge:UIView, nudgeLabel:UILabel ){
         responseCard    = card
         responseLabel   = label
 
@@ -54,7 +56,7 @@ class Responder {
         setLabel( Chooser.decider(self.responders) + Chooser.decider(self.answers) )
         ResponseCardAnimator.animate(responseCard, animationDelay:1.5, direction:true, {
             self.canRespond = true
-            self.timer      = NSTimer.scheduledTimerWithTimeInterval(4.5, target: self, selector: Selector("respond"), userInfo: nil, repeats: false)
+            self.timer      = NSTimer.scheduledTimerWithTimeInterval(8.0, target: self, selector: Selector("nudge"), userInfo: nil, repeats: true)
 
         })
     }
@@ -62,6 +64,10 @@ class Responder {
     func prepare(){
         setLabel( Chooser.decider(self.preAnswers) )
         ResponseCardAnimator.animate(responseCard, animationDelay:0.5)
+    }
+
+    func nudge(){
+
     }
 
     func setLabel(newText: String){

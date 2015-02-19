@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIb-wd-7Nv" userLabel="Response Plane" colorLabel="IBBuiltInLabel-Blue">
-                                <rect key="frame" x="46" y="50" width="508" height="372"/>
+                                <rect key="frame" x="60" y="50" width="480" height="426"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How may I help you?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="75S-jv-tIo">
-                                        <rect key="frame" x="0.0" y="0.0" width="508" height="372"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="426"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -30,26 +30,50 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="75S-jv-tIo" firstAttribute="leading" secondItem="NIb-wd-7Nv" secondAttribute="leading" id="EYq-5T-30n"/>
-                                    <constraint firstAttribute="bottom" secondItem="75S-jv-tIo" secondAttribute="bottom" id="RU6-ap-tsn"/>
-                                    <constraint firstItem="75S-jv-tIo" firstAttribute="top" secondItem="NIb-wd-7Nv" secondAttribute="top" id="TBc-Uf-Zhh"/>
-                                    <constraint firstAttribute="trailing" secondItem="75S-jv-tIo" secondAttribute="trailing" id="zgz-1e-J7K"/>
+                                    <constraint firstAttribute="trailing" secondItem="75S-jv-tIo" secondAttribute="trailing" id="2oZ-5b-jB5"/>
+                                    <constraint firstAttribute="bottom" secondItem="75S-jv-tIo" secondAttribute="bottom" id="LT3-P9-0wn"/>
+                                    <constraint firstItem="75S-jv-tIo" firstAttribute="leading" secondItem="NIb-wd-7Nv" secondAttribute="leading" id="Vhe-AX-DfE"/>
+                                    <constraint firstItem="75S-jv-tIo" firstAttribute="top" secondItem="NIb-wd-7Nv" secondAttribute="top" id="Zhw-G4-YeD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rl-A2-hnk" userLabel="Nudge Plane">
+                                <rect key="frame" x="60" y="490" width="480" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sD2-vQ-xgW">
+                                        <rect key="frame" x="8" y="8" width="472" height="66"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sD2-vQ-xgW" secondAttribute="trailing" id="Auy-Eg-Pnc"/>
+                                    <constraint firstItem="sD2-vQ-xgW" firstAttribute="leading" secondItem="2rl-A2-hnk" secondAttribute="leadingMargin" id="Ujj-nS-Saq"/>
+                                    <constraint firstAttribute="bottom" secondItem="sD2-vQ-xgW" secondAttribute="bottom" constant="16" id="lCf-Y5-PLD"/>
+                                    <constraint firstItem="sD2-vQ-xgW" firstAttribute="top" secondItem="2rl-A2-hnk" secondAttribute="topMargin" id="xSW-3P-4ad"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NIb-wd-7Nv" secondAttribute="bottom" constant="178" id="A8P-Vy-Udr"/>
-                            <constraint firstItem="NIb-wd-7Nv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="GFx-Pb-UzB"/>
-                            <constraint firstItem="NIb-wd-7Nv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="bP0-af-S1w"/>
-                            <constraint firstItem="NIb-wd-7Nv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oij-kN-Pgt"/>
+                            <constraint firstItem="NIb-wd-7Nv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="AoO-Z8-opd"/>
+                            <constraint firstItem="2rl-A2-hnk" firstAttribute="leading" secondItem="NIb-wd-7Nv" secondAttribute="leading" id="Cxm-Kc-aDD"/>
+                            <constraint firstItem="2rl-A2-hnk" firstAttribute="trailing" secondItem="NIb-wd-7Nv" secondAttribute="trailing" id="MJL-UJ-qEx"/>
+                            <constraint firstItem="2rl-A2-hnk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="490" id="OWT-Hd-qZp"/>
+                            <constraint firstItem="2rl-A2-hnk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fld-Yz-Lhf"/>
+                            <constraint firstAttribute="bottom" secondItem="2rl-A2-hnk" secondAttribute="bottom" constant="20" symbolic="YES" id="l00-5t-QS5"/>
+                            <constraint firstItem="2rl-A2-hnk" firstAttribute="top" secondItem="NIb-wd-7Nv" secondAttribute="bottom" constant="14" id="tDu-DE-jHW"/>
+                            <constraint firstItem="NIb-wd-7Nv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="zmT-SH-14h"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="OaT-Xo-fcq" appends="YES" id="gNB-M2-X0I"/>
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="NudgeCard" destination="2rl-A2-hnk" id="bfL-Ir-qeb"/>
+                        <outlet property="NudgeLabel" destination="sD2-vQ-xgW" id="OV5-53-WfB"/>
                         <outlet property="ResponseCard" destination="NIb-wd-7Nv" id="dEh-dF-wIJ"/>
                         <outlet property="ResponseLabel" destination="75S-jv-tIo" id="Ors-ir-L77"/>
                     </connections>

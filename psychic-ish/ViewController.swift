@@ -12,13 +12,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var ResponseCard: UIView!
     @IBOutlet weak var ResponseLabel: UILabel!
+    @IBOutlet weak var NudgeCard: UIView!
+    @IBOutlet weak var NudgeLabel: UILabel!
+
 
     var responder:Responder!
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        responder = Responder(card: ResponseCard, label: ResponseLabel)
+        responder = Responder(card: ResponseCard, label: ResponseLabel, nudge:NudgeCard, nudgeLabel:NudgeLabel)
 
     }
 
