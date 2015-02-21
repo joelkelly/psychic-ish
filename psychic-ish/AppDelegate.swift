@@ -41,5 +41,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    //  AppDelegate.swift
+    //  WatchKitOpenAppDemo
+
+    func application(application: UIApplication!, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]!, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        println("hi")
+    }
+
 }
 

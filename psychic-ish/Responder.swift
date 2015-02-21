@@ -10,10 +10,10 @@ import UIKit
 
 class Responder {
 
+    let main            :UIView!
     let responseLabel   :UILabel!
     let responseCard    :UIView!
-    let nudgeLabel      :UILabel!
-    let nudgeCard       :UIView!
+    var nudge           :Nudge!
 
     var preAnswers: JSON!
     var answers:    JSON!
@@ -22,13 +22,15 @@ class Responder {
 
     var isActive    = false
     var canRespond  = true
-    var timer       = NSTimer()
 
-    init ( card:UIView, label:UILabel, nudge:UIView, nudgeLabel:UILabel ){
+    init (mainView:UIView, card:UIView, label:UILabel, nudge:UIView, nLabel:UILabel ){
+        main            = mainView
         responseCard    = card
         responseLabel   = label
 
         loadOptions("rude")
+
+        self.nudge = Nudge( card: nudge, label: nLabel)
     }
 
     func loadOptions(timber:String){
@@ -42,10 +44,9 @@ class Responder {
         })
     }
 
-    @objc func respond(){
-
+    func respond(){
         if canRespond {
-            timer.invalidate()
+            nudge.stopNudging()
             ResponseCardAnimator.animate(responseCard, animationDelay: 0.2, direction:false, { self.isActive ? self.answer() : self.prepare() })
             isActive = !isActive
         }
@@ -54,23 +55,29 @@ class Responder {
     func answer(){
         canRespond     = false
         setLabel( Chooser.decider(self.responders) + Chooser.decider(self.answers) )
+
+        UIView.animateWithDuration(1.5, delay: 1.5, options: .CurveLinear, animations: {
+            self.main.backgroundColor = UIColor(hexString: "#ecf0f1")
+            }, completion: nil)
+
         ResponseCardAnimator.animate(responseCard, animationDelay:1.5, direction:true, {
             self.canRespond = true
-            self.timer      = NSTimer.scheduledTimerWithTimeInterval(8.0, target: self, selector: Selector("nudge"), userInfo: nil, repeats: true)
-
+            self.nudge.startNudging()
         })
     }
 
     func prepare(){
         setLabel( Chooser.decider(self.preAnswers) )
+
+        UIView.animateWithDuration(1.5, delay: 1.5, options: .CurveLinear, animations: {
+            self.main.backgroundColor = UIColor(hexString: "#ffffff")
+        }, completion: nil)
+
         ResponseCardAnimator.animate(responseCard, animationDelay:0.5)
-    }
-
-    func nudge(){
-
     }
 
     func setLabel(newText: String){
         responseLabel.text = newText
     }
+
 }

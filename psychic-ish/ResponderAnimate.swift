@@ -16,7 +16,7 @@ let ResponseAnimatorTransform:CATransform3D = {
     var startTransform              = CATransform3DIdentity
         startTransform              = CATransform3DRotate(CATransform3DIdentity, rotationRadians, 0.9, 0.9, 0.0)
         startTransform              = CATransform3DTranslate(startTransform, 0.0, 0.0, -0.9)
-        startTransform              = CATransform3DScale(startTransform,  0.9,  0.9,  5000.0)
+        startTransform              = CATransform3DScale(startTransform,  0.9,  0.9,  10000.0)
 
     return startTransform
 
@@ -39,13 +39,13 @@ class ResponseCardAnimator {
         let transforms                  = (ResponseAnimatorTransform, CATransform3DIdentity)
         let alpha : (Float, Float)      = (0.0, 1)
         let curve                       = direction ? UIViewAnimationOptions.CurveEaseIn : UIViewAnimationOptions.CurveEaseIn
-        let duration                    = direction ? 1.2 : 0.3
+        let duration                    = direction ? 1.2 : 0.5
 
         view.transform                  = direction ? transforms.0 : transforms.1
         view.opacity                    = direction ? alpha.0 : alpha.1
 
         UIView.animateWithDuration(duration, delay: animationDelay, options: curve, animations: {
-
+            
             view.transform              = direction ? transforms.1 : transforms.0
             view.opacity                = direction ? alpha.1 : alpha.0
 

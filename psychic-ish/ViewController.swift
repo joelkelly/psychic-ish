@@ -21,8 +21,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        responder = Responder(card: ResponseCard, label: ResponseLabel, nudge:NudgeCard, nudgeLabel:NudgeLabel)
-
+        responder = Responder(mainView: self.view, card: ResponseCard, label: ResponseLabel, nudge:NudgeCard, nLabel:NudgeLabel)
+        self.view.layerGradient()
+        self.view.backgroundColor = UIColor(hexString: "#ffffff")
     }
 
 
