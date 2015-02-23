@@ -10,7 +10,6 @@ import UIKit
 
 class Responder {
 
-    let main            :UIView!
     let responseLabel   :UILabel!
     let responseCard    :UIView!
     var nudge           :Nudge!
@@ -23,8 +22,8 @@ class Responder {
     var isActive    = false
     var canRespond  = true
 
-    init (mainView:UIView, card:UIView, label:UILabel, nudge:UIView, nLabel:UILabel ){
-        main            = mainView
+    init ( card:UIView, label:UILabel, nudge:UIView, nLabel:UILabel ){
+
         responseCard    = card
         responseLabel   = label
 
@@ -56,10 +55,6 @@ class Responder {
         canRespond     = false
         setLabel( Chooser.decider(self.responders) + Chooser.decider(self.answers) )
 
-        UIView.animateWithDuration(1.5, delay: 1.5, options: .CurveLinear, animations: {
-            self.main.backgroundColor = UIColor(hexString: "#ecf0f1")
-            }, completion: nil)
-
         ResponseCardAnimator.animate(responseCard, animationDelay:1.5, direction:true, {
             self.canRespond = true
             self.nudge.startNudging()
@@ -68,10 +63,6 @@ class Responder {
 
     func prepare(){
         setLabel( Chooser.decider(self.preAnswers) )
-
-        UIView.animateWithDuration(1.5, delay: 1.5, options: .CurveLinear, animations: {
-            self.main.backgroundColor = UIColor(hexString: "#ffffff")
-        }, completion: nil)
 
         ResponseCardAnimator.animate(responseCard, animationDelay:0.5)
     }

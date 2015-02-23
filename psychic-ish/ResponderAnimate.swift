@@ -34,18 +34,21 @@ class ResponseCardAnimator {
     }
 
     class func animate(cell:UIView, animationDelay:Double, direction:Bool, completion: (() -> Void)!){
-
+        let main                        = cell.superview!
         let view                        = cell.layer
         let transforms                  = (ResponseAnimatorTransform, CATransform3DIdentity)
         let alpha : (Float, Float)      = (0.0, 1)
         let curve                       = direction ? UIViewAnimationOptions.CurveEaseIn : UIViewAnimationOptions.CurveEaseIn
         let duration                    = direction ? 1.2 : 0.5
+        let background                  = direction ? "#ecf0f1" : "#ffffff"
 
         view.transform                  = direction ? transforms.0 : transforms.1
         view.opacity                    = direction ? alpha.0 : alpha.1
 
         UIView.animateWithDuration(duration, delay: animationDelay, options: curve, animations: {
-            
+
+
+            main.backgroundColor        = UIColor(hexString: background)
             view.transform              = direction ? transforms.1 : transforms.0
             view.opacity                = direction ? alpha.1 : alpha.0
 
